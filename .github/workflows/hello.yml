@@ -6,6 +6,8 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
+    env:
+      MY_ENV: "Hello from my environment variable!"
     steps:
       - name: Greet the User
         run: echo "Hello World!"
@@ -21,5 +23,5 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo "This is step 2"
-          echo "GitHub Actions is awesome"
+          echo "MY_ENV is: $MY_ENV"
+          echo "GitHub Actor is: $GITHUB_ACTOR"
