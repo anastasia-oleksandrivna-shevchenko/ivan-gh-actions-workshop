@@ -1,0 +1,16 @@
+name: Hello World Training Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the User
+        run: echo "Hello World!"
+
+      - name: Run a multi-line script
+        run: |
+          echo "This is step 2"
+          echo "GitHub Actions is awesome"
