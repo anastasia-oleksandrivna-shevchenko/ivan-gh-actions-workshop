@@ -12,7 +12,7 @@
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"
-  }
+  },
   "dependencies": {
     "@primer/octicons-react": "19.16.0",
     "@primer/react": "37.31.0",
