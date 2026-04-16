@@ -32,7 +32,7 @@ jobs:
         run: npm run build --if-present
 
       - name: Run tests with coverage
-        run: npm run test -- --coverage
+        run: npm run test:coverage
 
       - name: Publish coverage report
         uses: davelosert/vitest-coverage-report-action@v2
