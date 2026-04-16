@@ -10,6 +10,15 @@ jobs:
       - name: Greet the User
         run: echo "Hello World!"
 
+      - name: List files BEFORE checkout
+        run: ls -l
+
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: List files AFTER checkout
+        run: ls -l
+
       - name: Run a multi-line script
         run: |
           echo "This is step 2"
